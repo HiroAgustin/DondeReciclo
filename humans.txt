@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Agustin Diaz -- Developer -- @hiroagustin
+    Agustin Kryger -- Designer -- @agustinkry
+
+# THANKS
+
+    Chino @danielcarranza
+
+# TECHNOLOGY COLOPHON
+
+    HTML5 Mobile Boilerplate, Google Maps, donde.js
