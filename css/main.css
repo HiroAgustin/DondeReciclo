@@ -20,14 +20,26 @@ body {
 
 .header {
   background: #23b849;
-  height: 2em;
+  height: 2.6em;
   text-align: center;
   width: 100%;
 }
 
+.icon-current {
+  background: none;
+  border: none;
+  float: left;
+  height: 100%;
+  padding: 0;
+  width: 40px;
+}
+
+.icon-current img {
+  vertical-align: bottom;
+}
+
 h1 {
   color: #fff;
-  font-size: 1.5em;
   margin: 0;
   text-shadow: 1px 1px 1px #0a8a25;
 }
@@ -37,7 +49,7 @@ h1 {
   left: 0;
   position: absolute;
   right: 0;
-  top: 2em;
+  top: 2.6em;
 }
 
 .footer {
@@ -61,23 +73,34 @@ h1 {
 
 .btn {
   border: none;
-  background: #22b447;
   color: #fff;
-  font-weight: bold;
   line-height: 2.6em;
   margin: 0;
-  /*padding: 6px 0 4px;*/
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-align: center;
   width: 100%;
 }
 
-.btn-active, .btn[data-is-active="true"] {
-  background: #0a8a25;
+.btn[data-is-active="true"] {
+  font-weight: bold;
+  background-image: -webkit-radial-gradient(rgba(256, 256, 256, .25), rgba(0, 0, 0, 0));
+  background-image: -moz-radial-gradient(rgba(256, 256, 256, .25), rgba(0, 0, 0, 0));
+  background-image: -radial-gradient(rgba(256, 256, 256, .25), rgba(0, 0, 0, 0));
 }
 
-.icon {
-  /*display: block;*/
-  display: none;
-  margin: auto;
-  height: 15px;
-  width: 26px;
+.btn[data-type="PILAS"] {
+  background-color: rgba(183, 23, 46, 1);
+}
+
+.btn[data-type="LATA"] {
+  background-color: rgba(127, 24, 89, 1);
+}
+
+.btn[data-type="VIDRIO"] {
+  background-color: rgba(193, 146, 20, 1);
+}
+
+.btn[data-type="PLASTICO"] {
+  background-color: rgba(25, 59, 136, 1);
 }

@@ -35,6 +35,9 @@
 </head>
 <body>
   <header class="header">
+    <button id="pan-to-initial" class="icon icon-current">
+      <img src="img/btn-current-position.png" alt="Volver" width="16px" height="20px">
+    </button>
     <h1>DóndeReciclo</h1>
   </header>
   <div id="map" class="map" role="main">
@@ -45,42 +48,35 @@
   <footer class="footer">
     <ul id='controls' class="nav clearfix">
       <li>
-        <button class="btn" data-is-active="true" data-type="PILAS">
-          <!-- <img class="icon" src="img/icon-pila.png" alt="Pila"> -->
+        <button class="btn" data-type="PILAS" data-is-active="true">
           Pilas
         </button>
       </li>
       <li>
-        <button class="btn" data-is-active="true" data-type="LATA">
-          <!-- <i class="icon icon-lata"></i> -->
+        <button class="btn" data-type="LATA" data-is-active="true">
           Latas
         </button>
       </li>
       <li>
-        <button class="btn" data-is-active="true" data-type="VIDRIO">
-          <!-- <i class="icon icon-vidrio"></i> -->
+        <button class="btn" data-type="VIDRIO" data-is-active="true">
           Vidrio
         </button>
       </li>
       <li>
-        <button class="btn" data-is-active="true" data-type="PLASTICO">
-          <!-- <i class="icon icon-plastico"></i> -->
+        <button class="btn" data-type="PLASTICO" data-is-active="true">
           Plástico
         </button>
       </li>
     </ul>
   </footer>
-  <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_tDXB-ydglKvq5TUhVAb2-P-1ZE5tdbY&sensor=true"></script>
   <script src="js/underscore-1.4.4.js"></script>
   <script src="js/donde.js"></script>
-  <!--
   <script src="js/helper.js"></script>
   <script>
     MBP.scaleFix();
     MBP.startupImage();
-  </script>
-  -->
-  <script>
+
     var app = new Donde({
       zoom: 16
     , markers: (<?php include 'residuos.json' ?>).features
@@ -89,13 +85,16 @@
         latitude: -34.8937720817105
       , longitude: -56.1659574508667
       }
+
     , icons: {
         LATA: 'img/marker-lata.png'
       , PILAS: 'img/marker-pila.png'
       , VIDRIO: 'img/marker-vidrio.png'
       , PLASTICO: 'img/marker-plastico.png'
       }
+
     , mapping: {
+
         type: function (item)
         {
           return item.properties.TIPO_RESID;
@@ -111,14 +110,19 @@
       }
     });
 
-    app.listen(document.getElementById('controls'));
-
     app.init();
 
-    // var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-    // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    // g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    // s.parentNode.insertBefore(g,s)}(document,"script"));
+    app.listen(document.getElementById('controls'));
+
+    document.getElementById('pan-to-initial').addEventListener('click', function (e)
+    {
+      app.panToInitialPosition();
+    }, false);
+
+    var _gaq=[['_setAccount','UA-39355299-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 </body>
 </html>

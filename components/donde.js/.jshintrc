@@ -1,0 +1,9 @@
+{
+  "predef": ["google", "_"]
+, "laxcomma": true
+, "browser": true
+, "eqeqeq": true
+, "devel": true
+, "expr": true
+, "boss": true /* es como un like a boss */
+}

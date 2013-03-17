@@ -1,0 +1,8 @@
+{
+  "name": "html5-mobile-boilerplate",
+  "version": "4.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/h5bp/mobile-boilerplate.git"
+  }
+}
