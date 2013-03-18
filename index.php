@@ -35,16 +35,60 @@
 </head>
 <body>
   <header class="header">
-    <button id="pan-to-initial" class="icon icon-current">
+    <button id="pan-to-initial" class="icon icon-initial">
       <img src="img/btn-current-position.png" alt="Volver" width="16px" height="20px">
     </button>
     <h1>DóndeReciclo</h1>
+    <button id="toggle-page-info" class="icon icon-info">
+      <i>i</i>
+    </button>
   </header>
   <div id="map" class="map" role="main">
     <noscript>
       Necesitas tener JavaScript habilitado en tu navegador.
     </noscript>
   </div>
+  <section id="info" class="page page-info">
+    <article>
+      <h2>Ayuda</h2>
+      <p>Utiliza los botones ubicados en la parte inferior para filtrar tu búsqueda.</p>
+    </article>
+    <article>
+      <h3>¿Qué puedo tirar en cada contenedor?</h3>
+      <ul class="unstyled">
+        <li>
+          <h5>Vidrio</h5>
+          <p>De cualquier color, en la medida de lo posible libre de tapas, corchos y etiquetas.</p>
+        </li>
+        <li>
+          <h5>Plástico</h5>
+          <p>Todo tipo de plástico, en la medida de lo posible libre de etiquetas y sin tapas. Los envases de comida (bolsas de leche, potes de yogur, etc.) o contenedores del líquidos (detergente, alcohol, etc.) deberán ser previamente limpiados.</p>
+        </li>
+        <li>
+          <h5>Pilas</h5>
+          <p>Las de gran tamaño pueden no caber en los contenedores en la calle, se recomienda llevarlas a depósitos en supermercados.</p>
+        </li>
+        <li>
+          <h5>Metal</h5>
+          <p>Los contenedores están diseñados para objetos del tamaño de una lata aproximadamente, objetos más grandes pueden ofrecerse a recicladores ya que es un material de alto valor. No se deben tirar como metal equipos electrónicos.</p>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <h3>
+        Un proyecto de: 
+        <a href="http://www.datauy.org/">
+          <img class="logo-data" src="img/DATA.png" alt="Datos Abiertos, Transparencia y Acceso a la información." width="75px" height="33px">
+        </a>
+      </h3>
+      <p>
+        Por: <a href="mailto:agustinkryger@gmail.com">Agustin Kryger</a> y <a href="mailto:hiroagustin@gmail.com">Agustin Diaz</a>
+      </p>
+    </article>
+    <article>
+      <h4>Conocé también: <a href="http://donderetiro.uy">DondeRetiro</a></h4>
+    </article>
+  </section>
   <footer class="footer">
     <ul id='controls' class="nav clearfix">
       <li>
@@ -117,6 +161,15 @@
     document.getElementById('pan-to-initial').addEventListener('click', function (e)
     {
       app.panToInitialPosition();
+    }, false);
+
+    var infoPage = document.getElementById('info')
+      , className = '';
+
+    document.getElementById('toggle-page-info').addEventListener('click', function (e)
+    {
+      className = infoPage.className
+      infoPage.className = ~className.indexOf('page-active') ? className.replace('page-active', '') : className += ' page-active';
     }, false);
 
     var _gaq=[['_setAccount','UA-39355299-1'],['_trackPageview']];

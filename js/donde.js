@@ -83,7 +83,8 @@
       return this;
     }
 
-  , panToInitialPosition: function ()
+  , panToInitialPosition
+  : function ()
     {
       this.panToPosition(this.initialPosition);
 
@@ -174,7 +175,7 @@
           self.groups[key] = {};
         }
 
-        self.groups[key].icon = new google.maps.MarkerImage(self.options.icons[key], null, null, null, new google.maps.Size(27,33));
+        self.groups[key].icon = new google.maps.MarkerImage(self.options.icons[key], null, null, null, new google.maps.Size(27,34));
       });
 
       return this;

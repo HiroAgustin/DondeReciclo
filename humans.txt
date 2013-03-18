@@ -9,6 +9,7 @@
 # THANKS
 
     Chino @danielcarranza
+    Gabelula
 
 # TECHNOLOGY COLOPHON
 
