@@ -25,13 +25,13 @@ Utiliza los botones ubicados en la parte inferior para filtrar tu búsqueda.
 Más información muy pronto...
 
 ## Más opciones de reciclaje y reuso
-* Reutilización de computadoras: Antel Integra
-* Donaciones de ropa, muebles, etc: Emaús
-* Donaciones de ropa, muebles, etc: Cáritas
+* Reutilización de computadoras: [Antel Integra](http://www.antel.com.uy/antel/institucional/antel-integra/proyectos-principales/proyecto-antel-integra)
+* Donaciones de ropa, muebles, etc: [Emaús](http://www.emaus.org.uy/emaus/index.php?option=com_content&view=article&id=77&Itemid=100)
+* Donaciones de ropa, muebles, etc: [Cáritas](http://www.caritasuruguaya.org.uy/soy-caritas.php)
 
 Un proyecto de: [DATA.uy](http://www.datauy.org/)
 
-Por: [Agustin Kryger](https://twitter.com/agustinkry) | [Agustin Diaz](https://twitter.com/hiroagustin)
+Por: [Agustin Kryger](https://twitter.com/agustinkry) y [Agustin Diaz](https://twitter.com/hiroagustin)
 
 Código disponible en [Github](https://github.com/HiroAgustin/DondeReciclo "DondeReciclo")
 
