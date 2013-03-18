@@ -5,20 +5,20 @@ Utiliza los botones ubicados en la parte inferior para filtrar tu búsqueda.
 
 ## ¿Qué puedo tirar en cada contenedor?
 
-* 
-  ### Vidrio
+* *Vidrio*
+
   De cualquier color, en la medida de lo posible libre de tapas, corchos y etiquetas.
 
-*
-  ### Plástico
+* *Plástico*
+
   Todo tipo de plástico, en la medida de lo posible libre de etiquetas y sin tapas. Los envases de comida (bolsas de leche, potes de yogur, etc.) o contenedores del líquidos (detergente, alcohol, etc.) deberán ser previamente limpiados.
 
-*
-  ### Pilas
+* *Pilas*
+
   Las de gran tamaño pueden no caber en los contenedores en la calle, se recomienda llevarlas a depósitos en supermercados.
 
-*
-  ### Metal
+* *Metal*
+
   Los contenedores están diseñados para objetos del tamaño de una lata aproximadamente, objetos más grandes pueden ofrecerse a recicladores ya que es un material de alto valor. No se deben tirar como metal equipos electrónicos.
 
 ## ¿A dónde van mis residuos?
@@ -30,6 +30,7 @@ Más información muy pronto...
 * Donaciones de ropa, muebles, etc: Cáritas
 
 Un proyecto de: [DATA.uy](http://www.datauy.org/)
+
 Por: [Agustin Kryger](https://twitter.com/agustinkry) | [Agustin Diaz](https://twitter.com/hiroagustin)
 
 Código disponible en [Github](https://github.com/HiroAgustin/DondeReciclo "DondeReciclo")
