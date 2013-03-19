@@ -164,9 +164,9 @@ ul.unstyled {
 
 .btn[data-is-active="true"], .btn-active {
   font-weight: bold;
-  background-image: -webkit-radial-gradient(rgba(256, 256, 256, .4), rgba(0, 0, 0, 0));
-  background-image: -moz-radial-gradient(rgba(256, 256, 256, .4), rgba(0, 0, 0, 0));
-  background-image: -radial-gradient(rgba(256, 256, 256, .4), rgba(0, 0, 0, 0));
+  background-image: -webkit-radial-gradient(rgba(256, 256, 256, .3), rgba(0, 0, 0, 0));
+  background-image: -moz-radial-gradient(rgba(256, 256, 256, .3), rgba(0, 0, 0, 0));
+  background-image: -radial-gradient(rgba(256, 256, 256, .3), rgba(0, 0, 0, 0));
 }
 
 .btn[data-type="PILAS"] {
