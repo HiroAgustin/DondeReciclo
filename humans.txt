@@ -8,9 +8,10 @@
 
 # THANKS
 
-    Chino @danielcarranza
-    Gabelula
+    Chino -- @danielcarranza
+    Gaba -- @gaba
+    Pablo -- @UnityShell
 
 # TECHNOLOGY COLOPHON
 
-    HTML5 Mobile Boilerplate, Google Maps, donde.js
+    HTML5 Mobile Boilerplate, Google Maps, donde.js, Grunt.js
