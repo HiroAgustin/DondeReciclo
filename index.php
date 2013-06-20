@@ -126,7 +126,7 @@
 
         var app = new Donde({
             zoom: 16
-        ,   markers: (<?php include 'residuos.json' ?>).features
+        ,   markers: (<?php include 'residuos.geojson' ?>).features
         ,   errorMessage: 'No sabemos dónde estas :('
         ,   defaultLocation: {
                 latitude: -34.8937720817105
