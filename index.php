@@ -138,6 +138,8 @@
             ,   PILAS: 'img/marker-pila.png'
             ,   VIDRIO: 'img/marker-vidrio.png'
             ,   PLASTICO: 'img/marker-plastico.png'
+            
+            ,   LONAS: 'img/marker-lonas.png'
             }
 
         ,   mapping: {

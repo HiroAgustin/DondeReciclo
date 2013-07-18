@@ -3,6 +3,17 @@
     "features": [
         {
             "geometry": {
+                "coordinates": [
+                    -56.203164,
+                    -34.908841
+                ]
+            },
+            "properties": {
+                "TIPO_RESID": "LONAS"
+            }
+        },
+        {
+            "geometry": {
                 "type": "Point",
                 "coordinates": [
                     -56.352119473107685,
