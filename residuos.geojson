@@ -3,11 +3,13 @@
     "features": [
         {
             "geometry": {
+                "type": "Point",
                 "coordinates": [
                     -56.203164,
                     -34.908841
                 ]
             },
+            "type": "Feature",
             "properties": {
                 "TIPO_RESID": "LONAS"
             }
